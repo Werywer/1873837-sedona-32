@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Erika Mickeviciute](https://up.htmlacademy.ru/htmlcss/32/user/1873837).
-* Наставник: `Неизвестно`.
+- Студент: [Erika Mickeviciute](https://up.htmlacademy.ru/htmlcss/32/user/1873837).
+- Наставник: `Константин Черепанов`.
 
 ---
 
