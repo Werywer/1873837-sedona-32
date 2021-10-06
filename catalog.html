@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Hotels</title>
   </head>
   <body>
@@ -54,26 +55,40 @@
       </header>
       <section class="filter">
         <h2 class="visually-hidden">Список фильтров для гостиниц</h2>
-        <form class="catalog-filter"  action="https://echo.htmlacademy.ru/" method="get">
+        <form
+          class="catalog-filter"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+        >
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="pool" checked />
-                   <span class="control-label">Бассейн</span>
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="pool"
+                    checked
+                  />
+                  <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked />
-                    <span class="control-label">Парковка</span>
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="parking"
+                    checked
+                  />
+                  <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="wi-fi" />
-                    <span class="control-label">Wi-Fi</span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -83,19 +98,24 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input"  type="radio" name="hotel" checked/>
-                    <span class="control-label">Гостиница</span>
+                  <input
+                    class="control-input"
+                    type="radio"
+                    name="hotel"
+                    checked
+                  />
+                  <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="motel"/>
+                  <input class="control-input" type="radio" name="motel" />
                   <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="apartment"/>
+                  <input class="control-input" type="radio" name="apartment" />
                   <span class="control-label">Апартаменты</span>
                 </label>
               </li>
@@ -103,10 +123,12 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label class="catalog-filter-label">от
+            <label class="catalog-filter-label"
+              >от
               <input class="catalog-filter-input" type="number" />
             </label>
-            <label class="catalog-filter-label">до
+            <label class="catalog-filter-label"
+              >до
               <input class="catalog-filter-input" type="number" />
             </label>
             <button class="range-toggle toggle-min" type="button">
@@ -145,10 +167,14 @@
       <section class="product-card">
         <div class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt=" Hotel Amara Resort & Spa"/>
+            <img
+              class="product-card-image"
+              src="#"
+              alt=" Hotel Amara Resort & Spa"
+            />
             <h3 class="product-card-title">Amara Resort & Spa</h3>
-              <span class="product-card-name">Гостиница</span>
-              <span class="product-card-price">От 4000 ₽</span>
+            <span class="product-card-name">Гостиница</span>
+            <span class="product-card-price">От 4000 ₽</span>
           </a>
           <a class="button" href="#">Подробнее</a>
           <button class="btn-blue">В избранное</button>
@@ -163,10 +189,14 @@
         </div>
         <div class="product-card">
           <a class="product-card-link" href="#">
-            <img  class="product-card-image" src="#" alt="Motel Desert Quail Inn"/>
-              <h3 class="product-card-title">Desert Quail Inn</h3>
-                <span class="product-card-name">Мотель</span>
-                <span class="product-card-price">От 3000 ₽</span>
+            <img
+              class="product-card-image"
+              src="#"
+              alt="Motel Desert Quail Inn"
+            />
+            <h3 class="product-card-title">Desert Quail Inn</h3>
+            <span class="product-card-name">Мотель</span>
+            <span class="product-card-price">От 3000 ₽</span>
           </a>
           <a class="button" href="#">Подробнее</a>
           <button class="btn-blue">В избранное</button>
@@ -180,10 +210,14 @@
 
         <div class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt=" apartment Villas at Poco Diablo" />
-              <h3 class="product-card-title">Villas at Poco Diablo</h3>
-               <span class="product-card-name">Апартаменты</span>
-                <span class="product-card-price">От 2000 ₽</span>
+            <img
+              class="product-card-image"
+              src="#"
+              alt=" apartment Villas at Poco Diablo"
+            />
+            <h3 class="product-card-title">Villas at Poco Diablo</h3>
+            <span class="product-card-name">Апартаменты</span>
+            <span class="product-card-price">От 2000 ₽</span>
           </a>
           <a class="button" href="#">Подробнее</a>
           <button class="btn-green">В избранном</button>
@@ -196,10 +230,14 @@
 
         <div class="product-card">
           <a class="product-card-link" href="#">
-            <img  class="product-card-image" src="#" alt=" Hotel GreenTree Inn"/>
+            <img
+              class="product-card-image"
+              src="#"
+              alt=" Hotel GreenTree Inn"
+            />
             <h3 class="product-card-title">GreenTree Inn</h3>
-               <span class="product-card-name">Гостиница</span>
-               <span class="product-card-price">От 3000 ₽</span>
+            <span class="product-card-name">Гостиница</span>
+            <span class="product-card-price">От 3000 ₽</span>
           </a>
           <a class="button" href="#">Подробнее</a>
           <button class="btn-blue">В избранное</button>
@@ -253,11 +291,13 @@
         <form
           class="newsletter-form"
           action="https://echo.htmlacademy.ru"
-          method="POST">
+          method="POST"
+        >
           <input
             type="email"
             name="newsletter-email"
-            placeholder="Ваш e-mail"/>
+            placeholder="Ваш e-mail"
+          />
           <button class="newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -285,10 +325,14 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">номер телефона</h2>
-        <a href="tel:+78128121212" class="footer-contacts-phone">+7 (812) 812-12-12</a>
+        <a href="tel:+78128121212" class="footer-contacts-phone"
+          >+7 (812) 812-12-12</a
+        >
         <h3 class="visually-hidden">Сделано в Htmlacademy</h3>
         <span>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html <span>academy</span></a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/"
+            >.html <span>academy</span></a
+          >
         </span>
       </section>
     </footer>
