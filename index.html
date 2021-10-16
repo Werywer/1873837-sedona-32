@@ -12,7 +12,7 @@
           <li class="navigation-item navigation-main">
             <a class="navigation-link">Главная</a>
           </li>
-          <li class="navigation-item navigation-item-sedon">
+          <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
           </li>
           <li class="navigation-item">
@@ -35,7 +35,7 @@
               <span class="visually-hidden"> Поиск </span>
             </a>
           </li>
-          <li class="navigation-item navigation-item-heart">
+          <li class="navigation-item">
             <a href="#" class="navigation-link">
               <img src="img/variant-heart.svg" alt="Список понравившегося" />
               <span class="visually-hidden">Закладка</span>
@@ -109,7 +109,7 @@
               />
             </li>
             <div class="advantages-column">
-              <li class="advantages-item">
+              <li class="advantages-item bg-lb">
                 <img
                   class="advantages-item-icon"
                   src="img/variant-housing.svg"
@@ -139,7 +139,7 @@
                   вы не разочаруетесь!
                 </p>
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item bg-lb">
                 <img
                   class="advantages-item-icon"
                   src="img/variant-souvenir.svg"
@@ -164,7 +164,7 @@
                 height="384"
               />
               <div class="advantages-bg-blue">
-                <h3>
+                <h3 class="advantages-bg-blue-title">
                   Там есть <br />
                   мост дьявола
                 </h3>
@@ -177,7 +177,7 @@
               </div>
             </li>
             <div class="advantages-column">
-              <li class="advantages-item">
+              <li class="advantages-item bg-lb">
                 <h3 class="advantages-title">Небольшая площадь</h3>
                 <span class="advantages-number">— №3 —</span>
                 <p class="advantages-description">
@@ -185,7 +185,7 @@
                   находятся очень близко
                 </p>
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item bg-db">
                 <h3 class="advantages-title">Красивая дорога</h3>
                 <span class="advantages-number">— №4 —</span>
                 <p class="advantages-description">
@@ -193,7 +193,7 @@
                   совсем не скучно!
                 </p>
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item bg-lb">
                 <h3 class="advantages-title">Мало туристов</h3>
                 <span class="advantages-number">— №5 —</span>
                 <p class="advantages-description">
@@ -205,39 +205,36 @@
           </ul>
         </section>
         <section class="suggestions">
-          <div class="suggestions-padding">
-            <h2 class="suggestions-title">Заинтересовались?</h2>
-            <p class="suggestions-text">
-              Укажите предполагаемые даты поездки, <br />
-              и мы покажем вам лучшие предложения гостиниц в Седоне
-            </p>
+          <h2 class="suggestions-title">Заинтересовались?</h2>
+          <p class="suggestions-text">
+            Укажите предполагаемые даты поездки, <br />
+            и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <span class="suggestions-button">
             <a class="suggestions-link button" href=""
-              >ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a
-            >
-          </div>
+              >ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+            </a>
+          </span>
         </section>
         <section class="newsletter">
-          <div class="newsletter-padding">
-            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-            <p class="newsletter-text">
-              Только полезная информация и никакого спама, <br />
-              честное бойскаутское!
-            </p>
-            <form
-              class="newsletter-form"
-              action="https://echo.htmlacademy.ru"
-              method="POST"
-            >
-              <input
-                type="email"
-                name="newsletter-email"
-                placeholder="Ваш e-mail"
-              />
-              <button class="newsletter-button" type="submit">
-                Подписаться
-              </button>
-            </form>
-          </div>
+          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+          <p class="newsletter-text">
+            Только полезная информация и никакого спама, <br />
+            честное бойскаутское!
+          </p>
+          <form
+            class="newsletter-form"
+            action="https://echo.htmlacademy.ru"
+            method="POST"
+          >
+            <input
+              class="newsletter-input"
+              type="email"
+              name="newsletter-email"
+              placeholder="Ваш e-mail"
+            />
+            <button class="newsletter-button" type="submit">Подписаться</button>
+          </form>
         </section>
       </div>
     </main>
