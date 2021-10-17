@@ -41,7 +41,7 @@ body {
   background-color: #f2f2f2;
 }
 .visually-hidden {
-  font-size: 0;
+  display: none;
 }
 
 /* Pages */
@@ -103,7 +103,7 @@ body {
   margin: 0 auto;
 }
 .main-index-sedona {
-  background-image: url(img/index-background.jpg);
+  background-image: url(../1873837-sedona-32/img/index-background.jpg);
   background-repeat: no-repeat;
 }
 .vector {
@@ -131,7 +131,10 @@ body {
 }
 
 /* Advantages*/
-
+ul {
+  margin: 0;
+  padding: 0;
+}
 .advantages-list {
   width: 1200px;
   margin: 0;
@@ -353,7 +356,7 @@ body {
 
 /* SORTING */
 .visyally-hidden {
-  visibility: hidden;
+  display: none;
 }
 .sorting-container {
   display: flex;
@@ -387,6 +390,7 @@ body {
 }
 
 /*СARDS */
+
 .product-cards-container {
   width: 1056px;
   margin: 0 auto;
@@ -467,20 +471,23 @@ body {
 }
 /* BUTTON LOAD */
 .product-button {
+  width: 625px;
   margin-top: 31px;
   margin-bottom: 30px;
-  margin-left: 288px;
-  margin-right: 287px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product-button-load {
-  width: 625px;
+  padding: 17px 200px;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
   background-color: #83b3d3;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* PAGINATION */
@@ -488,17 +495,21 @@ body {
   display: flex;
   margin-top: 31px;
   margin-bottom: 89px;
+  margin-left: 72px;
+  margin-right: 72px;
   width: 1056px;
   height: 55px;
   justify-content: space-between;
 }
 .pagination-list {
   display: flex;
-
+  width: 369px;
   list-style-type: none;
+  justify-content: space-between;
 }
 .pagination-link {
   text-decoration: none;
+  color: #ffffff;
 }
 .pagination-item {
   width: 55px;
@@ -512,9 +523,7 @@ body {
 .pagination-item-1 {
   background-color: #e5e5e5;
 }
-.pagination-link {
-  color: #ffffff;
-}
+
 .pagination-link-1 {
   color: black;
 }
@@ -523,21 +532,21 @@ body {
   font-weight: 400;
   font-size: 18px;
 }
-.pagination-select {
-  /*width: 160px;
-  height: 48px;*/
-}
 
 /* NEWSLETTER*/
 .newsletter-catalog {
   text-align: center;
   margin-bottom: 137px;
+  text-align: center;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .newsletter-catalog-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-
+  text-transform: uppercase;
   color: #000000;
 }
 .newsletter-catalog-text {
@@ -547,7 +556,15 @@ body {
 
   color: #333333;
 }
+
+.newsletter-catalog-input {
+  width: 550px;
+  height: 60px;
+}
 .newsletter-catalog-button {
+  width: 190px;
+  height: 50px;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
