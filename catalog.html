@@ -58,7 +58,7 @@
             <h1 class="header-title">Гостиницы Седоны</h1>
             <ul class="header-link-list">
               <li class="header-link-item">
-                <a href="index.html" class="header-link">
+                <a href="index.html" class="main-inner-header-link">
                   <img src="img/catalog/home.svg" alt="back to home" />
                 </a>
               </li>
@@ -189,54 +189,74 @@
               </select>
               <button class="visually-hidden">Отсортировать продукты</button>
             </form>
-            <div class="sorting-list">
-              <a href="#" class="button">
-                <img
-                  src="img/catalog/variant-tile.svg"
-                  alt="сортировка по карточкам"
-                />
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-              <a href="#" class="button">
-                <img
-                  src="img/catalog/variant-slideshow.svg"
-                  alt="сортировка по слайдам"
-                />
-                <span class="visually-hidden">Показать слайдшоу</span>
-              </a>
-              <a href="#" class="button sorting-button-list">
-                <img
-                  src="img/catalog/variant-list.svg"
-                  alt="сортировка по спискам"
-                />
-                <span class="visually-hidden">Показать список</span>
-              </a>
-            </div>
+            <ul class="sorting-list">
+              <li class="sorting-list-item">
+                <a href="#" class="button sorting-list-button">
+                  <img
+                    class="sorting-list-img"
+                    src="img/catalog/variant-tile.svg"
+                    alt="сортировка по карточкам"
+                    width="16"
+                    height="14"
+                  />
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+              </li>
+              <li class="sorting-list-item">
+                <a href="#" class="button sorting-list-button">
+                  <img
+                    class="sorting-list-img"
+                    src="img/catalog/variant-slideshow.svg"
+                    alt="сортировка по слайдам"
+                    width="16"
+                    height="14"
+                  />
+                  <span class="visually-hidden">Показать слайдшоу</span>
+                </a>
+              </li>
+              <li class="sorting-list-item">
+                <a
+                  href="#"
+                  class="button sorting-button-list sorting-list-button"
+                >
+                  <img
+                    class="sorting-list-img"
+                    src="img/catalog/variant-list.svg"
+                    alt="сортировка по спискам"
+                    width="16"
+                    height="14"
+                  />
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="product-cards">
           <div class="product-cards-container">
             <div class="product-card">
-              <a class="product-card-link" href="#">
-                <img
-                  class="product-card-image"
-                  src="img/catalog/hotel-1.jpg"
-                  alt=" Hotel Amara Resort & Spa"
-                  width="180"
-                  height="120"
-                />
-              </a>
-              <div class="product-card-part1">
-                <a href="#">
-                  <h3 class="product-card-title">Amara Resort & Spa</h3>
-                  <span class="product-card-name">Гостиница</span>
-                  <span class="product-card-price">От 4000 ₽</span></a
-                >
-
-                <div class="product-card-part2">
-                  <a class="product-card-button" href="#">Подробнее</a>
-                  <button class="btn-blue">В избранное</button>
+              <div class="product-card-grid">
+                <a class="product-card-link link-decoration" href="#">
+                  <img
+                    class="product-card-image"
+                    src="img/catalog/hotel-1.jpg"
+                    alt=" Hotel Amara Resort & Spa"
+                    width="180"
+                    height="120"
+                  />
+                </a>
+                <div class="title">
+                  <a class="product-card-amara link-decoration" href="#">
+                    <h3 class="product-card-title">Amara Resort & Spa</h3>
+                  </a>
+                  <div class="product-card-part1">
+                    <span class="product-card-name">Гостиница</span>
+                    <span class="product-card-price">От 4000 ₽</span>
+                  </div>
                 </div>
+
+                <a class="product-card-button" href="#">Подробнее</a>
+                <button class="btn-blue">В избранное</button>
               </div>
 
               <div class="product-card-stars">
@@ -252,26 +272,28 @@
             </div>
 
             <div class="product-card">
-              <a class="product-card-link" href="#">
-                <img
-                  class="product-card-image"
-                  src="img/catalog/hotel-2.jpg"
-                  alt=" Hotel Amara Resort & Spa"
-                  width="180"
-                  height="120"
-                />
-              </a>
-              <div class="product-card-part1">
-                <a href="#">
-                  <h3 class="product-card-title">Desert Quail Inn</h3>
-                  <span class="product-card-name">Мотель</span>
-                  <span class="product-card-price">От 3000 ₽</span>
+              <div class="product-card-grid">
+                <a class="product-card-link link-decoration" href="#">
+                  <img
+                    class="product-card-image"
+                    src="../1873837-sedona-32/img/catalog/hotel-2.jpg"
+                    alt=" Desert Quail Inn"
+                    width="180"
+                    height="120"
+                  />
                 </a>
-
-                <div class="product-card-part2">
-                  <a class="product-card-button" href="#">Подробнее</a>
-                  <button class="btn-blue">В избранное</button>
+                <div class="title">
+                  <a class="product-card-amara link-decoration" href="#">
+                    <h3 class="product-card-title">Desert Quail Inn</h3>
+                  </a>
+                  <div class="product-card-part1">
+                    <span class="product-card-name">Мотель</span>
+                    <span class="product-card-price">От 3000 ₽</span>
+                  </div>
                 </div>
+
+                <a class="product-card-button" href="#">Подробнее</a>
+                <button class="btn-blue">В избранное</button>
               </div>
 
               <div class="product-card-stars">
@@ -285,67 +307,68 @@
                 <span class="product-card-rate">Рейтинг: 8,9</span>
               </div>
             </div>
-
             <div class="product-card">
-              <a class="product-card-link" href="#">
-                <img
-                  class="product-card-image"
-                  src="img/catalog/hotel-3.jpg"
-                  alt=" apartment Villas at Poco Diablo"
-                  width="180"
-                  height="120"
-                />
-              </a>
-              <div class="product-card-part1">
-                <a href="#">
-                  <h3 class="product-card-title">Villas at Poco Diablo</h3>
-                  <span class="product-card-name">Апартаменты</span>
-                  <span class="product-card-price">От 2000 ₽</span>
+              <div class="product-card-grid">
+                <a class="product-card-link link-decoration" href="#">
+                  <img
+                    class="product-card-image"
+                    src="../1873837-sedona-32/img/catalog/hotel-3.jpg"
+                    alt=" apartment Villas at Poco Diablo"
+                    width="180"
+                    height="120"
+                  />
                 </a>
-
-                <div class="product-card-part2">
-                  <a class="button product-card-button" href="#">Подробнее</a>
-                  <button class="btn-green">В избранном</button>
+                <div class="title">
+                  <a class="product-card-amara link-decoration" href="#">
+                    <h3 class="product-card-title">Villas at Poco Diablo</h3>
+                  </a>
+                  <div class="product-card-part1">
+                    <span class="product-card-name">Апартаменты</span>
+                    <span class="product-card-price">От 2000 ₽</span>
+                  </div>
                 </div>
+                <a class="product-card-button" href="#">Подробнее</a>
+                <button class="btn-green">В избранное</button>
               </div>
               <div class="product-card-stars">
                 <span class="stars">
                   <img
                     class="stars-img"
-                    src="img/catalog/stars-2.svg"
+                    src="../1873837-sedona-32/img/catalog/stars-2.svg"
                     alt="star"
                   />
                 </span>
                 <span class="product-card-rate">Рейтинг: 9,2</span>
               </div>
             </div>
-
             <div class="product-card">
-              <a class="product-card-link" href="#">
-                <img
-                  class="product-card-image"
-                  src="img/catalog/hotel-4.jpg"
-                  alt=" Hotel GreenTree Inn"
-                  width="180"
-                  height="120"
-              /></a>
-              <div class="product-card-part1">
-                <a href="#">
-                  <h3 class="product-card-title">GreenTree Inn</h3>
-                  <span class="product-card-name">Гостиница</span>
-                  <span class="product-card-price">От 3000 ₽</span>
+              <div class="product-card-grid">
+                <a class="product-card-link link-decoration" href="#">
+                  <img
+                    class="product-card-image"
+                    src="../1873837-sedona-32/img/catalog/hotel-4.jpg"
+                    alt=" Hotel GreenTree Inn"
+                    width="180"
+                    height="120"
+                  />
                 </a>
-                <div class="product-card-part2">
-                  <a class="button product-card-button" href="#">Подробнее</a>
-                  <button class="btn-blue">В избранное</button>
+                <div class="title">
+                  <a class="product-card-amara link-decoration" href="#">
+                    <h3 class="product-card-title">GreenTree Inn</h3>
+                  </a>
+                  <div class="product-card-part1">
+                    <span class="product-card-name">Гостиница</span>
+                    <span class="product-card-price">От 3000 ₽</span>
+                  </div>
                 </div>
+                <a class="product-card-button" href="#">Подробнее</a>
+                <button class="btn-blue">В избранное</button>
               </div>
-
               <div class="product-card-stars">
                 <span class="stars">
                   <img
                     class="stars-img"
-                    src="img/catalog/stars-2.svg"
+                    src="../1873837-sedona-32/img/catalog/stars-2.svg"
                     alt="star"
                   />
                 </span>
@@ -400,7 +423,11 @@
             Только полезная информация и никакого спама, <br />
             честное бойскаутское!
           </p>
-          <form action="https://echo.htmlacademy.ru" method="POST">
+          <form
+            class="newsletter-catalog-form"
+            action="https://echo.htmlacademy.ru"
+            method="POST"
+          >
             <input
               class="newsletter-catalog-input"
               type="email"
