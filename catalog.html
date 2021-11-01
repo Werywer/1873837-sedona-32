@@ -44,9 +44,7 @@
             </a>
           </li>
           <li class="navigation-item navigation-item-button">
-            <a href="#" class="navigation-link navigation-button">
-              <span class="navigation-link-text">Хочу сюда!</span>
-            </a>
+            <a href="#" class="navigation-button"> Хочу сюда! </a>
           </li>
         </ul>
       </nav>
@@ -58,13 +56,18 @@
             <h1 class="header-title">Гостиницы Седоны</h1>
             <ul class="header-link-list">
               <li class="header-link-item">
-                <a href="index.html" class="main-inner-header-link">
+                <a href="index.html" class="header-link-hotel">
                   <img src="img/catalog/home.svg" alt="back to home" />
                 </a>
               </li>
-              <li class="header-link-item header-link-symbol">></li>
+              <li class="header-link-symbol">></li>
               <li class="header-link-item">
-                <a class="header-link header-link-title">Гостиницы</a>
+                <a
+                  href="#"
+                  class="header-link header-link-title header-link-hotel"
+                >
+                  Гостиницы
+                </a>
               </li>
             </ul>
           </header>
@@ -197,47 +200,57 @@
               </select>
               <button class="visually-hidden">Отсортировать продукты</button>
             </form>
-            <ul class="sorting-list">
-              <li class="sorting-list-item">
-                <a href="#" class="button sorting-list-button">
-                  <img
-                    class="sorting-list-img"
-                    src="img/catalog/variant-tile.svg"
-                    alt="сортировка по карточкам"
-                    width="16"
-                    height="14"
-                  />
-                  <span class="visually-hidden">Показать карточки</span>
-                </a>
-              </li>
-              <li class="sorting-list-item">
-                <a href="#" class="button sorting-list-button">
-                  <img
-                    class="sorting-list-img"
-                    src="img/catalog/variant-slideshow.svg"
-                    alt="сортировка по слайдам"
-                    width="16"
-                    height="14"
-                  />
-                  <span class="visually-hidden">Показать слайдшоу</span>
-                </a>
-              </li>
-              <li class="sorting-list-item">
-                <a
-                  href="#"
-                  class="button sorting-button-list sorting-list-button"
-                >
-                  <img
-                    class="sorting-list-img"
-                    src="img/catalog/variant-list.svg"
-                    alt="сортировка по спискам"
-                    width="16"
-                    height="14"
-                  />
-                  <span class="visually-hidden">Показать список</span>
-                </a>
-              </li>
-            </ul>
+
+            <a class="card-grid-toggle" href="#">
+              <svg
+                class="sorting-list-icon"
+                aria-hidden="true"
+                width="16"
+                height="14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
+                  fill="#000"
+                />
+              </svg>
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+
+            <a class="card-grid-toggle" href="#">
+              <svg
+                class="sorting-list-icon"
+                aria-hidden="true"
+                width="16"
+                height="14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"
+                  fill="#000"
+                />
+              </svg>
+              <span class="visually-hidden">Показать слайдшоу</span>
+            </a>
+
+            <a class="card-grid-toggle card-grid-toggle-current" href="#">
+              <svg
+                class="sorting-list-icon"
+                aria-hidden="true"
+                width="16"
+                height="14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
+                  fill="#000"
+                />
+              </svg>
+              <span class="visually-hidden">Показать список</span>
+            </a>
           </div>
         </section>
         <section class="product-cards">
@@ -386,7 +399,7 @@
           <div class="product-button">
             <a class="product-button-load" href="#">Загрузить ещё</a>
           </div>
-
+          <!-- PAGINATION -->
           <div class="pagination">
             <ul class="pagination-list">
               <li class="pagination-item pagination-item-1">
@@ -412,7 +425,11 @@
               <label class="pagination-name" for="pagination"
                 >Гостиниц на странице:</label
               >
-              <select class="pagination-select" name="" id="pagination">
+              <select
+                class="pagination-select"
+                name="pagination"
+                id="pagination"
+              >
                 <option value="4">4</option>
                 <option value="10">10</option>
                 <option value="15">15</option>
@@ -453,20 +470,67 @@
         <h2 class="visually-hidden">Подвал</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a href="#" class="button-social">
-              <img src="img/service-tw.svg" alt="icon tw" />
+            <a class="footer-social-link" href="#" class="button-social">
+              <svg
+                class="footer-icon"
+                fill="none"
+                width="18"
+                height="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#a)">
+                  <path
+                    d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"
+                    fill="#83B3D3"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h18v15H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a href="#" class="button-social">
-              <img src="img/service-fb.svg" alt="icon fb" />
+            <a class="footer-social-link" href="#" class="button-social">
+              <svg
+                class="footer-icon"
+                width="10"
+                height="18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"
+                  fill="#83B3D3"
+                />
+              </svg>
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a href="#" class="button-social">
-              <img src="img/service-yt.svg" alt="icon Youtube" />
+            <a class="footer-social-link" href="#" class="button-social">
+              <svg
+                class="footer-icon"
+                width="20"
+                height="16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#a)">
+                  <path
+                    d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"
+                    fill="#83B3D3"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h20v16H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
@@ -477,11 +541,10 @@
           >+7 (812) 812-12-12</a
         >
         <h3 class="visually-hidden">Сделано в Htmlacademy</h3>
-        <span class="footer-htmlacademy-link">
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <img src="img/brand-htmlacademy.svg" alt="htmlacademy link" />
-          </a>
-        </span>
+
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img src="img/brand-htmlacademy.svg" alt="htmlacademy link" />
+        </a>
       </div>
     </footer>
   </body>
