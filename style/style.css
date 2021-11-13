@@ -174,8 +174,9 @@ body {
   background-image: url(../img/index-background.jpg);
   background-repeat: no-repeat;
 }
-.vector {
-  padding-top: 20px;
+
+.vektor {
+  margin-top: 17px;
 }
 .main-title {
   margin-top: 63px;
