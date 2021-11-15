@@ -115,13 +115,13 @@ body {
   outline: none;
 }
 .navigation-button {
-  font-family: "PT Sans";
-  font-weight: 700;
   display: inline-block;
+  width: 160px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  text-align: center;
   font-weight: 700px;
   font-size: 16px;
   line-height: 20px;
@@ -132,6 +132,7 @@ body {
   text-decoration: none;
   border: none;
 }
+
 .navigation-button:hover {
   color: #ffffff;
   background-color: #615048;
@@ -158,10 +159,7 @@ body {
   margin: auto;
   fill: #000000;
 }
-.navigation-item-button {
-  width: 160px;
-  text-align: center;
-}
+
 /* main*/
 .main-container {
   background-color: #ffffff;
