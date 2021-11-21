@@ -1,26 +1,26 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   src: url(/fonts/PTSans-Regular.ttf) format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   src: url(/fonts/PTSans-BoldItalic.ttf) format("ttf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   src: url(/fonts/PTSans-Italic.ttf) format("ttf");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   src: url(/fonts/PTSans-BoldItalic.ttf) format("ttf");
   font-weight: 700;
   font-style: italic;
@@ -124,7 +124,7 @@ body {
   width: 160px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   text-align: center;
   font-weight: 700px;
@@ -214,7 +214,7 @@ body {
   top: -10px;
   margin-top: 0;
   margin-bottom: 2px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
@@ -792,7 +792,7 @@ ul {
   display: block;
   width: 160px;
   height: 48px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1027,7 +1027,7 @@ h3 {
   border: none;
 }
 .btn-blue {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
