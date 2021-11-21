@@ -48,7 +48,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">
+            <button class="navigation-link popover-close-button">
               <svg
                 class="navigation-icon"
                 aria-hidden="true"
@@ -62,8 +62,74 @@
                   fill="#000"
                 />
               </svg>
-              <span class="visually-hidden">Закладка</span>
-            </a>
+              <span class="visually-hidden">Корзина</span>
+            </button>
+
+            <div class="popover popover-cart">
+              <span class="popover-mark"></span>
+              <div class="popover-content">
+                <h2 class="visually-hidden">Корзина</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <img
+                      class="cart-item-hotel"
+                      src="img/hotel-2-small.jpg"
+                      alt="hotel"
+                    />
+                    <p class="cart-item-title">Desert Quail Inn</p>
+                    <p class="cart-item-apartment">Мотель</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg
+                        class="cart-item-icon"
+                        width="16"
+                        height="16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity=".2" fill="#000">
+                          <path
+                            d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"
+                          />
+                          <path
+                            d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <img
+                      class="cart-item-hotel"
+                      src="img/hotel-3-small.svg"
+                      alt="hotel"
+                    />
+                    <p class="cart-item-title">Villas at Poco Diablo</p>
+                    <p class="cart-item-apartment">Апартаменты</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg
+                        class="cart-item-icon"
+                        width="16"
+                        height="16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity=".2" fill="#000">
+                          <path
+                            d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"
+                          />
+                          <path
+                            d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <a class="cart-item-link" href="@">Все избранные</a>
+              </div>
+            </div>
           </li>
           <li class="navigation-item navigation-item-button">
             <a href="#" class="navigation-button"> Хочу сюда! </a>
@@ -363,5 +429,120 @@
         </a>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-hostels">
+        <div class="modal-content">
+          <div class="modal-cart">
+            <div class="modal-content">
+              <h2 class="modal-content-title">Поиск гостиницы в Седоне</h2>
+            </div>
+            <button class="modal-close-button button button-light">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+
+          <form
+            class="modal-search-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <p class="field-group appointment-form-date">
+              <label " for="appointment-date"> Дата заезда: </label>
+              <input
+                class="field"
+                type="text"
+                id="appointment-date"
+                name="appointment-date"
+                value="27 апреля 2020"
+              />
+
+            </p>
+            <span class="field-group-text">Мы не можем отправить вас в прошлое.</span>
+            <p class="field-group appointment-form-date">
+              <label for="appointment-date"> Дата выезда: </label>
+              <input
+                class="field"
+                type="text"
+                id="appointment-date"
+                name="appointment-date"
+                value="1 сентября 2021"
+              />
+            </p>
+            <span class="field-group-text">На эти даты есть свободные номера. Пока есть.</span>
+            <div class="group-flex">
+              <p class="group-flex-field field-group-number ">
+                <label class="group-flex-label" for="adult">
+                  Взрослые:</label>
+                  <button
+                  class="button-minus-adult"
+                    type="button"
+                    onclick="this.nextElementSibling.stepDown()"
+                  >
+                    -
+                  </button>
+                  <input
+                    id="adult"
+                    type="number"
+                    min="0"
+                    max="100"
+                    value="1"
+                    readonly
+                    class="input-number"
+                  />
+                  <button
+                  class="button-plus-adult"
+                    type="button"
+                    onclick="this.previousElementSibling.stepUp()"
+                  >
+                    +
+                  </button>
+
+              </p>
+              <p class="field-group-number group-flex-field group-kids">
+                <span class="form-label form-label-icon">
+                  <label class="group-flex-label-kids" for="kids"> Дети: </label>
+                  <button class="info info-close-button" type="button">
+                    <span class="visually-hidden"
+                      >Посмотреть дополнительную информацию</span
+                    >
+
+                  </button>
+                    <div class="popover-kids">
+                      <span class="popover-kids-mark"></span>
+                      <span class="popover-kids-text">Укажите количество детей, <br> которые будут с вами, возраст <br> которых от 6 до 18 лет. Дети <br> до 6 лет размещаются <br> бесплатно.</span>
+                    </div>
+                </span>
+                <span class="button-input">
+                  <button
+                    class="button-minus"
+                    type="button"
+                    onclick="this.nextElementSibling.stepDown()"
+                  >
+                    -
+                  </button>
+                  <input
+                    id="kids"
+                    type="number"
+                    min="0"
+                    max="100"
+                    value="1"
+                    readonly
+                    class="input-number-kids"
+                  />
+                  <button
+                    class="button-plus"
+                    type="button"
+                    onclick="this.previousElementSibling.stepUp()"
+                  >
+                    +
+                  </button>
+                </span>
+              </p>
+            </div>
+          </form>
+          <a class="modal-content-link" href="#">Найти</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

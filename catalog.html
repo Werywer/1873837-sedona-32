@@ -31,17 +31,108 @@
           />
         </a>
         <ul class="navigation-list navigation-user">
+          <li class="navigation-item"></li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <img src="img/variant-search.svg" alt="Иконка Поиска" />
+              <svg
+                class="navigation-icon"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m19.5 18-3.7-3.67a8 8 0 0 0 1.7-4.87 8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"
+                  fill="#000"
+                />
+              </svg>
               <span class="visually-hidden"> Поиск </span>
             </a>
           </li>
           <li class="navigation-item navigation-item-heart">
-            <a href="#" class="navigation-link">
-              <img src="img/variant-heart.svg" alt="Список понравившегося" />
-              <span class="visually-hidden">Закладка</span>
-            </a>
+            <button class="navigation-link popover-close-button">
+              <svg
+                class="navigation-icon"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
+                  fill="#000"
+                />
+              </svg>
+              <span class="visually-hidden">Корзина</span>
+            </button>
+
+            <div class="popover popover-cart">
+              <span class="popover-mark"></span>
+              <div class="popover-content">
+                <h2 class="visually-hidden">Корзина</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <img
+                      class="cart-item-hotel"
+                      src="img/hotel-2-small.jpg"
+                      alt="hotel"
+                    />
+                    <p class="cart-item-title">Desert Quail Inn</p>
+                    <p class="cart-item-apartment">Мотель</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg
+                        class="cart-item-icon"
+                        width="16"
+                        height="16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity=".2" fill="#000">
+                          <path
+                            d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"
+                          />
+                          <path
+                            d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <img
+                      class="cart-item-hotel"
+                      src="img/hotel-3-small.svg"
+                      alt="hotel"
+                    />
+                    <p class="cart-item-title">Villas at Poco Diablo</p>
+                    <p class="cart-item-apartment">Апартаменты</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg
+                        class="cart-item-icon"
+                        width="16"
+                        height="16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity=".2" fill="#000">
+                          <path
+                            d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"
+                          />
+                          <path
+                            d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <a class="cart-item-link" href="@">Все избранные</a>
+              </div>
+            </div>
           </li>
           <li class="navigation-item navigation-item-button">
             <a href="#" class="navigation-button"> Хочу сюда! </a>
@@ -85,32 +176,35 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="pool"
                         checked
                       />
+                      <span class="control-mark"></span>
                       <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="parking"
                         checked
                       />
+                      <span class="control-mark"></span>
                       <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="wi-fi"
                       />
+                      <span class="control-mark"></span>
                       <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
@@ -123,27 +217,34 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
-                        name="hotel"
+                        name="apartment-group"
                         checked
                       />
+                      <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="motel" />
+                      <input
+                        class="visually-hidden control-input"
+                        type="radio"
+                        name="apartment-group"
+                      />
+                      <span class="control-mark"></span>
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
-                        name="apartment"
+                        name="apartment-group"
                       />
+                      <span class="control-mark"></span>
                       <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
@@ -153,29 +254,39 @@
               <fieldset class="catalog-filter-group filter-input">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
-                <label class="visually-hidden">от</label>
-                <input
-                  class="catalog-filter-input"
-                  type="number"
-                  placeholder="от"
-                />
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="visually-hidden">от</label>
+                    <input
+                      class="catalog-filter-input"
+                      type="number"
+                      placeholder="от"
+                    />
 
-                <label class="visually-hidden">до</label>
-                <input
-                  class="catalog-filter-input"
-                  type="number"
-                  placeholder="до"
-                />
+                    <label class="visually-hidden">до</label>
 
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">минимальная цена</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">максимальная цена</span>
-                </button>
+                    <input
+                      class="catalog-filter-input"
+                      type="number"
+                      placeholder="до"
+                    />
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="width: 227px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">минимальная цена</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">максимальная цена</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <div class="catalog-filter-button">
-                <button class="btn-blue" type="submit">Применить</button>
+                <button class="catalog-btn-blue" type="submit">
+                  Применить
+                </button>
                 <button class="button-drop" type="submit">Сбросить</button>
               </div>
             </form>
@@ -186,18 +297,20 @@
           <div class="sorting-container">
             <span class="sorting-result">Найдено гостиниц: 38</span>
             <form class="sorting-form">
-              <label class="visually-hidden" for="sorting">Сортировка</label>
-              <select class="sorting-select" name="sorting" id="sorting">
-                <option value="popular sorting-select-text">
-                  Сначала популярные
-                </option>
-                <option value="cheap sorting-select-text">
-                  Сначала дешёвые
-                </option>
-                <option value="expensive sorting-select-text">
-                  Сначала дорогое
-                </option>
-              </select>
+              <div class="select">
+                <label class="visually-hidden" for="sorting">Сортировка</label>
+                <select class="sorting-select" name="sorting" id="sorting">
+                  <option value="popular sorting-select-text">
+                    Сначала популярные
+                  </option>
+                  <option value="cheap sorting-select-text">
+                    Сначала дешёвые
+                  </option>
+                  <option value="expensive sorting-select-text">
+                    Сначала дорогое
+                  </option>
+                </select>
+              </div>
               <button class="visually-hidden">Отсортировать продукты</button>
             </form>
 
